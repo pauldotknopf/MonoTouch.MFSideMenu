@@ -35,6 +35,8 @@ namespace MonoTouch.MFSideMenu.Demo
 			var container = MFSideMenuContainerViewController.ContainerWithCenterViewController (navigationController, 
 			                                                                                     leftMenuViewController, 
 			                                                                                     rightMenuViewController);
+			leftMenuViewController.Container = container;
+			rightMenuViewController.Container = container;
 			window.RootViewController = container;
 			// make the window visible
 			window.MakeKeyAndVisible ();
