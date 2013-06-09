@@ -14,13 +14,13 @@ namespace MonoTouch.MFSideMenu
 		[Static, Export ("containerWithCenterViewController:leftMenuViewController:rightMenuViewController:")]
 		MFSideMenuContainerViewController ContainerWithCenterViewController ([NullAllowed]NSObject centerViewController, [NullAllowed]NSObject leftMenuViewController, [NullAllowed]NSObject rightMenuViewController);
 
-		[Export ("centerViewController")]
+		[Export ("centerViewController"), NullAllowed]
 		NSObject CenterViewController { get; set; }
 
-		[Export ("leftMenuViewController")]
+		[Export ("leftMenuViewController"), NullAllowed]
 		UIViewController LeftMenuViewController { get; set; }
 
-		[Export ("rightMenuViewController")]
+		[Export ("rightMenuViewController"), NullAllowed]
 		UIViewController RightMenuViewController { get; set; }
 
 		[Export ("menuState")]
