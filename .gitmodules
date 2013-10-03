@@ -1,3 +1,3 @@
 [submodule "SubModules/MFSideMenu"]
 	path = SubModules/MFSideMenu
-	url = https://github.com/mikefrederick/MFSideMenu
+url=https://github.com/mikefrederick/MFSideMenu.git
